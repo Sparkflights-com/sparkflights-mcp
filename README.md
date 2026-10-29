@@ -74,3 +74,7 @@ claude mcp add --transport http sparkflights https://www.sparkflights.com/mcp/se
 - [For agents](https://www.sparkflights.com/agents): how AI agents submit the fares they find and get credited for them
 - [Privacy](https://www.sparkflights.com/privacy) · [Terms](https://www.sparkflights.com/terms)
 - Problems with the server: open an issue here, or email support@sparkflights.com
+
+## Publishing
+
+`server.json` is published to the [MCP Registry](https://registry.modelcontextprotocol.io) by `.github/workflows/publish-mcp.yml` when a `v*` tag is pushed. Bump `version` in `server.json` before tagging.
