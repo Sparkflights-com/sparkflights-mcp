@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sparkflights": {
+      "type": "streamable-http",
+      "url": "https://www.sparkflights.com/mcp/search"
+    }
+  }
+}
