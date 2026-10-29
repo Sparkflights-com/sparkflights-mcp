@@ -1,11 +1,11 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.gilby125/sparkflights",
+  "name": "io.github.Sparkflights-com/sparkflights",
   "title": "Sparkflights",
   "description": "Search verified flight fares by city, month, cabin and price, with a link to book each one.",
   "websiteUrl": "https://www.sparkflights.com",
   "repository": {
-    "url": "https://github.com/gilby125/sparkflights-mcp",
+    "url": "https://github.com/Sparkflights-com/sparkflights-mcp",
     "source": "github"
   },
   "version": "1.0.0",
