@@ -1,6 +1,6 @@
 # Sparkflights MCP server
 
-Search flight fares that [Sparkflights](https://www.sparkflights.com) has found and verified, from Claude, ChatGPT, Cursor, VS Code or any other MCP client.
+Search the flight fares [Sparkflights](https://www.sparkflights.com) has found, from Claude, ChatGPT, Cursor, VS Code or any other MCP client, and watch a route for new ones.
 
 ```
 https://www.sparkflights.com/mcp/search
@@ -12,14 +12,15 @@ The server is hosted. There is nothing to install, no account and no API key. It
 
 ## Tools
 
-Both tools only read data.
+The tools only read data; none of them changes anything.
 
-- **`search_deals`** finds verified fares by origin and destination (an airport code such as `JFK`, or a city such as `New York`), departure month, cabin, region and maximum price. Results are ranked by cost per mile.
+- **`search_deals`** finds fares by origin and destination (an airport code such as `JFK`, or a city such as `New York`), departure month, cabin, region and maximum price. Results are ranked by cost per mile.
 - **`get_deal`** returns one fare's itinerary, flights and the date pairs its fare page lists, with their prices.
+- **`watch_route`** returns the link to the Sparkflights watch form for a route, with both cities and the cabin filled in. Saving the watch, on the site, needs a free Sparkflights account; new deals on the route then come by email or browser notification.
 
-Each result links to its Sparkflights fare page, where you book it, and to its route page, where you can follow the route for new fares.
+Each fare links to its Sparkflights fare page, where you book it.
 
-Sparkflights is not a live fare search. An empty result means no verified fare matches right now, not that no flights exist. Sparkflights does not sell tickets or take payments.
+Sparkflights is not a live fare search. An empty result means no fare matches right now, not that no flights exist. Sparkflights does not sell tickets or take payments.
 
 ## Add it to your client
 
@@ -67,6 +68,7 @@ claude mcp add --transport http sparkflights https://www.sparkflights.com/mcp/se
 - Flights from Chicago in March under $500
 - Any flight deals to Tokyo?
 - Find flight deals from Los Angeles, then show me the dates and flights for the first one
+- Watch Chicago to Lisbon for me
 
 ## Links
 
