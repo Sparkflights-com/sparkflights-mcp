@@ -24,7 +24,7 @@ Sparkflights is not a live fare search. An empty result means no fare matches ri
 
 ## Add it to your client
 
-**Claude** (claude.ai or Claude Desktop): Settings → Connectors → Add custom connector, then paste the URL above.
+**Claude** (claude.ai or Claude Desktop): Customize → Connectors → Add → Add custom connector, paste the URL above, and under Authentication choose **Sign in when needed** (Claude may suggest "No sign-in"; with that, saving a watch cannot sign you in). Keep "Use Claude's published identity".
 
 **Claude Code:**
 
