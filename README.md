@@ -6,7 +6,7 @@ Search the flight fares [Sparkflights](https://www.sparkflights.com) has found, 
 https://www.sparkflights.com/mcp/search
 ```
 
-The server is hosted — nothing to install. Searching needs no account; to save a route watch you sign in with Google, Microsoft or email. It uses streamable HTTP.
+The server is hosted — nothing to install. Searching needs no account; to save a route watch you sign in with a Google or Microsoft account. It uses streamable HTTP.
 
 ![Fare cards shown in Claude](assets/screenshot-search.png)
 
