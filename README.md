@@ -1,6 +1,6 @@
 # Sparkflights MCP server
 
-Search the flight fares [Sparkflights](https://www.sparkflights.com) has found, from Claude, ChatGPT, Cursor, VS Code or any other MCP client, and watch a route for new ones.
+Search the current flight fares on [Sparkflights](https://www.sparkflights.com), from Claude, ChatGPT, Cursor, VS Code or any other MCP client, and watch a route for new ones.
 
 ```
 https://www.sparkflights.com/mcp/search
@@ -20,7 +20,7 @@ The server is hosted — nothing to install. Searching needs no account; to save
 
 Each fare links to its Sparkflights fare page, where you book it.
 
-Sparkflights is not a live fare search. An empty result means no fare matches right now, not that no flights exist. Sparkflights does not sell tickets or take payments.
+Every fare listed is available now and shows when its price was last checked. An empty result means no fare matches right now, not that no flights exist. Sparkflights does not sell tickets or take payments.
 
 ## Add it to your client
 
