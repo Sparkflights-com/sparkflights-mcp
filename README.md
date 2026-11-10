@@ -18,7 +18,13 @@ The server is hosted — nothing to install. Searching needs no account; to save
 - **`get_deal`** returns one fare's itinerary, flights and the date pairs its fare page lists, with their prices.
 - **`watch_route`** saves a fare watch for the route — every airport of both cities, in the cabin you name. The first time you save one your client signs you in; new deals on the route then come by email and browser notification.
 
-Sparkflights pages also offer these tools to in-browser agents through WebMCP (Chrome origin trial).
+## WebMCP (in-browser)
+
+Sparkflights pages register tools on `document.modelContext` where the browser supports it (Chrome WebMCP origin trial), so an agent working in the page can call them without an API key or a connector:
+
+- **`search_flight_deals`** — the deal board's search form, as a declarative WebMCP tool: city, cabin, region and sort.
+- **`filter_deals`** — the same form on city, region and route pages.
+- **`search_deals`**, **`get_deal`**, **`watch_route`** — the MCP server's tools, registered in the page.
 
 Each fare links to its Sparkflights fare page, where you book it.
 
