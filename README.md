@@ -18,6 +18,8 @@ The server is hosted — nothing to install. Searching needs no account; to save
 - **`get_deal`** returns one fare's itinerary, flights and the date pairs its fare page lists, with their prices.
 - **`watch_route`** saves a fare watch for the route — every airport of both cities, in the cabin you name. The first time you save one your client signs you in; new deals on the route then come by email and browser notification.
 
+Sparkflights pages also offer these tools to in-browser agents through WebMCP (Chrome origin trial).
+
 Each fare links to its Sparkflights fare page, where you book it.
 
 Every fare listed is available now and shows when its price was last checked. An empty result means no fare matches right now, not that no flights exist. Sparkflights does not sell tickets or take payments.
