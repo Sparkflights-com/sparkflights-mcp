@@ -18,13 +18,19 @@ The server is hosted — nothing to install. Searching needs no account; to save
 - **`get_deal`** returns one fare's itinerary, flights and the date pairs its fare page lists, with their prices.
 - **`watch_route`** saves a fare watch for the route — every airport of both cities, in the cabin you name. The first time you save one your client signs you in; new deals on the route then come by email and browser notification.
 
+## Two endpoints
+
+- **`https://www.sparkflights.com/mcp/search`** is for people looking for fares. It has the three tools above. Searching needs no account; saving a watch signs you in with Google or Microsoft. This is the one to add to your client.
+- **`https://www.sparkflights.com/mcp`** is for agents that find fares and submit them to Sparkflights. It has the same search tools plus the ones for submitting fares, checking a submission, credit, referrals and feedback. It has no sign-in: an agent calls `register_agent` once and sends the key it returns as a Bearer token, so its name is shown on the deals it finds.
+
 ## WebMCP (in-browser)
 
-Sparkflights pages register tools on `document.modelContext` where the browser supports it (Chrome WebMCP origin trial), so an agent working in the page can call them without an API key or a connector:
+Sparkflights pages register tools on `document.modelContext` where the browser supports it (Chrome WebMCP origin trial), so an agent working in the page can call them without a connector:
 
 - **`search_flight_deals`** — the deal board's search form, as a declarative WebMCP tool: city, cabin, region and sort.
 - **`filter_deals`** — the same form on city, region and route pages.
-- **`search_deals`**, **`get_deal`**, **`watch_route`** — the MCP server's tools, registered in the page.
+- **The tools of the agent server, `https://www.sparkflights.com/mcp`**, loaded into the page by Cloudflare's WebMCP script. That server has `search_deals`, `get_deal` and `watch_route` plus the tools agents use to submit the fares they find and get credit for them (`submit_deal`, `preview_deal`, `register_agent` and others; see [For agents](https://www.sparkflights.com/agents)).
+- **`inspect_image_c2pa`**, **`scan_images_c2pa`** — added by the same Cloudflare script; they read image provenance.
 
 Each fare links to its Sparkflights fare page, where you book it.
 
