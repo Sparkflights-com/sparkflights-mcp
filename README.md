@@ -77,6 +77,7 @@ claude mcp add --transport http sparkflights https://www.sparkflights.com/mcp/se
 - Any flight deals to Tokyo?
 - Find flight deals from Los Angeles, then show me the dates and flights for the first one
 - Watch Chicago to Lisbon for me
+- Tell me when flights from Chicago to Tokyo get cheaper
 
 ## Links
 
