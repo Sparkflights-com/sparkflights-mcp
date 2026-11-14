@@ -22,7 +22,7 @@ The server is hosted — nothing to install. Searching needs no account; to save
 
 **`https://www.sparkflights.com/mcp/search`** has the three tools above. Searching needs no account; saving a watch signs you in with Google or Microsoft. This is the one to add to your client.
 
-`https://www.sparkflights.com/mcp` serves the same three tools with no sign-in, so its `watch_route` returns the watch form for you to save. Agents that submit the fares they find use the REST API or A2A; see [For agents](https://www.sparkflights.com/agents).
+The old address, `https://www.sparkflights.com/mcp`, redirects there. Agents that submit the fares they find use the REST API or A2A; see [For agents](https://www.sparkflights.com/agents).
 
 ## WebMCP (in-browser)
 
@@ -30,7 +30,7 @@ Sparkflights pages register tools on `document.modelContext` where the browser s
 
 - **`search_flight_deals`** — the deal board's search form, as a declarative WebMCP tool: city, cabin, region and sort.
 - **`filter_deals`** — the same form on city, region and route pages.
-- **`search_deals`**, **`get_deal`**, **`watch_route`** — the tools of `https://www.sparkflights.com/mcp`, loaded into the page by Cloudflare's WebMCP script.
+- **`search_deals`**, **`get_deal`**, **`watch_route`** — the tools of `https://www.sparkflights.com/mcp/search`, loaded into the page by Cloudflare's WebMCP script.
 - **`inspect_image_c2pa`**, **`scan_images_c2pa`** — added by the same Cloudflare script; they read image provenance.
 
 Each fare links to its Sparkflights fare page, where you book it.
